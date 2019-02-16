@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_medium_2"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    android:layout_marginBottom="@dimen/margin_medium_2"
+    android:layout_marginRight="@dimen/margin_medium_2"
+    card_view:cardCornerRadius="@dimen/margin_medium_3"
+    card_view:cardElevation="@dimen/margin_medium">
+
+
+    <RelativeLayout
+        android:id="@+id/rv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_menu_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_appbar_height"
+            android:foreground="@drawable/gradient"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mexican_bite" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/iv_menu_backdrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:src="@drawable/ic_near_me_white_24dp"
+            app:civ_border_color="@color/circle_image_view_background"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_background" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_delivery"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/iv_menu_backdrop"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:src="@drawable/ic_store_mall_directory_light_gery_24dp"
+            app:civ_border_color="@color/circle_image_view_border"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_border" />
+
+        <TextView
+            android:id="@+id/tv_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_menu_backdrop"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@+id/civ_delivery"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/menu_title"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rb_stars"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_menu_title"
+            android:layout_alignLeft="@+id/tv_menu_title"
+            android:layout_marginTop="@dimen/margin_small"
+            android:numStars="5"
+            android:rating="4.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_stars"
+            android:layout_alignLeft="@+id/tv_menu_title"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium_3"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/information"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

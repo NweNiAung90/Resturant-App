@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<TextView
+        android:id="@+id/tv_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:shadowColor="@color/black_full"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/title"
+        android:textColor="@color/white_full"
+        android:textSize="@dimen/text_regular_3x" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_medium_3"
+        android:src="@drawable/ic_near_me_white_24dp"
+        app:civ_border_color="@color/circle_image_view_background"
+        app:civ_border_width="@dimen/margin_medium"
+        app:civ_circle_background_color="@color/circle_image_view_background" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:justificationMode="inter_word"
+        android:shadowColor="@color/black_full"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/description"
+        android:textColor="@color/white_full"
+        android:textSize="@dimen/text_regular" />
+
+    <LinearLayout
+        android:id="@+id/ll_circle_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_description"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_time"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:layout_weight="1"
+            android:src="@drawable/ic_access_time_blue_24dp"
+            app:civ_border_color="@color/circle_image_view_border"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_border" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_location"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:layout_weight="1"
+            android:src="@drawable/ic_my_location_green_24dp"
+            app:civ_border_color="@color/circle_image_view_border"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_border" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_map"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:layout_weight="1"
+            android:src="@drawable/ic_map_red_24dp"
+            app:civ_border_color="@color/circle_image_view_border"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_border" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_delivery"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:layout_weight="1"
+            android:src="@drawable/ic_store_mall_directory_green_24dp"
+            app:civ_border_color="@color/circle_image_view_border"
+            app:civ_border_width="@dimen/margin_medium"
+            app:civ_circle_background_color="@color/circle_image_view_border" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_circle_image"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="@string/time"
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/white_full"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_regular"
+            />
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_view"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/white_full"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_regular"
+            />
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textColor="@color/white_full"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_regular"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Resturant-App</string>
+    <string name="action_settings">Settings</string>
+    <string name="description"><j>When asked recently by Pepperidge Farm if I would create a simple and sophisticated recipe using their Puff Pastry product and an ingredient somewhat native to Southern California (the avocado), the wheels began a-spinnin’. I dreamed about Puff Pastry and all its possibilities, I tested out all kinds of savory recipes, I turned out a few duds and I cherished my keepers. I ended up settling on a “bruschetta” of sorts… Southwestern Bruschetta Bites.  They’re a Mexican version of Italian bruschetta (which is usually toasted bread with a chunky tomato mixture placed on top), instead utilizing a spiced-up Puff Pastry base with a Southwestern-style topping.</j></string>
+    <string name="title">SOUTHWESTERN BRUSCHETTA BITES</string>
+    <string name="tab_details">DETAILS</string>
+    <string name="tab_menu">MENU</string>
+    <string name="tab_reviews">REVIEWS</string>
+    <string name="time">10am-10pm</string>
+    <string name="location">1.5Km</string>
+    <string name="delivery">Delivery</string>
+    <string name="map_view">Map view</string>
+    <string name="menu_title">Mexican Bite</string>
+    <string name="information">Mexican . 18 Tank House Lane Hip spot for Mexican tapas with a patio Open until 12:00 AM.</string>
+    <string name="circle">Discover Resturants</string>
+    <string name="rounder_corner">N Ceder St  &amp; Cedar</string>
+</resources>
